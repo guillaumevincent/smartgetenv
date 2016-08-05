@@ -76,7 +76,7 @@ return `variable_name` env variable and cast into a list.
 
 Use `separator` to split `variable_name`
 
-By default `separator` is equal to semicolon `;`.
+By default `separator` is equal to semicolon `;`
 
 ## Test
 
