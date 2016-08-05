@@ -4,10 +4,8 @@
 
 version 0.1.0
 
-smartgetenv is a python module. It add missing default value in ConfigParser module.
-It use RawConfigParser module from ConfigParser.
+smartgetenv is a python module that helps you to cast env variables.
 
-Work with python 2.7 and python 3.4 and 3.5
 
 ```python
 from smartgetenv import get_env, get_bool, get_list, get_float, get_int
@@ -39,7 +37,7 @@ debug = get_bool('DEBUG')
 assert debug is False
 ```
 
-all this method accept a default value as second parameter
+all methods accept a default value as second parameter like default os.getenv method.
 
 ```python
 from smartgetenv import get_env
@@ -82,12 +80,3 @@ run tests
 ## License
 
 MIT - See License file
-
-
-export default {
-
-    toto(o){
-    
-    }
-
-}
