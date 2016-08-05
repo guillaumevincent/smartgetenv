@@ -55,21 +55,28 @@ Install it with pip:
 
 ## API
 
-#### smartgetenv.get_env(ENV_VARIABLE_NAME[, default])
-return env variable with ENV_VARIABLE_NAME. If ENV_VARIABLE_NAME is not set return default value. default value is set to None.
+#### get_env(variable_name[, default])
+return env variable with `variable_name`. 
 
-#### smartgetenv.get_bool(ENV_VARIABLE_NAME[, default])
-return env variable with ENV_VARIABLE_NAME and cast into a boolean
+If `variable_name` is not set return default value. 
 
-#### smartgetenv.get_int(ENV_VARIABLE_NAME[, default])
-return env variable with ENV_VARIABLE_NAME and cast into an int
+By default `Default` value is `None`.
 
-#### smartgetenv.get_float(ENV_VARIABLE_NAME[, default])
-return env variable with ENV_VARIABLE_NAME and cast into a float
+#### get_bool(variable_name[, default])
+return `variable_name` env variable and cast into a boolean
 
-#### smartgetenv.get_list(ENV_VARIABLE_NAME[, default, separator])
-return env variable with ENV_VARIABLE_NAME and cast into a list. Use separator to split ENV_VARIABLE_NAME (default ';') 
+#### get_int(variable_name[, default])
+return `variable_name` env variable and cast into an int
 
+#### get_float(variable_name[, default])
+return `variable_name` env variable and cast into a float
+
+#### get_list(variable_name[, default, separator])
+return `variable_name` env variable and cast into a list. 
+
+Use `separator` to split `variable_name`
+
+By default `separator` is equal to semicolon `;`.
 
 ## Test
 
